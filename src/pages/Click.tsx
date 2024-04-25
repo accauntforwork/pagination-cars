@@ -19,6 +19,7 @@ function Click() {
   const params = useParams();
 
   async function getData(limit: number, currentPage: number) {
+    console.log(currentPage);
     try {
       const data = await fetch(
         `http://localhost:3000/machines?limit=${limit}&page=${params.id}`
